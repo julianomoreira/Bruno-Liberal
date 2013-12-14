@@ -67,7 +67,6 @@ a:focus { color: #2795b6; }
 	padding: 0 1em;
 }
 
-
 // Container 
 
 .container {
@@ -81,6 +80,17 @@ a:focus { color: #2795b6; }
 		color: #fff;
 	}
 }
+
+.row {
+	@media screen and (max-width: $break-medium) {
+		padding: 0 1em;				
+	}	
+}
+
+.section-title {
+	text-transform: uppercase;
+	font-size: 18px;
+}
 .header-wrapper {	
 	background: url(../images/header-bg.jpg) no-repeat;
 	-webkit-background-size: cover;
@@ -89,29 +99,97 @@ a:focus { color: #2795b6; }
 	background-size: cover;
 	height: 465px;
 	border-top: 5px solid #a34c38;
+	@media screen and (max-width: $break-medium) {
+		height: auto;			
+	}
 }
 .header {
+	.two-cl {
+		@media screen and (max-width: $break-medium) {
+			width: 100%;			
+		}
+	}	
 	h1 {
 		font-family: $minion-pro;
 		font-size: 58px;
 		color: #fff;
-		margin-top: 60px;		
+		margin-top: 60px;
+		@include black-textshadow(.25);		
+		@media screen and (max-width: $break-medium) {
+			margin-top: 0;
+		}	
+		@media screen and (max-width: $break-small) {
+			font-size: 38px;
+		}		
+	}
+	p {
+		@include black-textshadow(.25);
 	}
 	.book-cover {
 		position: relative;
 		top: 60px;
 		left: 30px;
+		@media screen and (max-width: $break-medium) {
+			left: auto;
+			top: auto;
+			text-align: center;
+			margin: 25px auto 0 auto;
+			display: block;
+			width: 60%;
+		}
+		@media screen and (max-width: $break-small) {
+			width: 80%;
+		}
+	}
+	input[type="text"] {
+		color: #999!important;
+	}
+	::-webkit-input-placeholder { /* WebKit browsers */
+    	color: #999;
+		text-align: center;
+		font-size: 18px;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color: #999;
+		text-align: center;
+		font-size: 18px;	    
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: #999;
+		text-align: center;
+		font-size: 18px;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color: #999;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	input[type="submit"] {
+		text-transform: uppercase;
+		font-family: $futura;
+		@include black-textshadow(.25);
+		font-size: 20px;
 	}
 }
 .sn-wrapper {
 	background-color: #632e22;
 	padding: 0 0 1em 0;
+	margin: 0 0 1em 0;
 }
 .sn {	
 	h4 {
 		color: #fff;
+		text-align: right;
+		@media screen and (max-width: $break-medium) {
+			text-align: center;
+		}
 	}
-	ul {
+	ul {	
+		float: right;		
+		@media screen and (max-width: $break-medium) {
+			float: none;
+		}
 		li {
 			margin: 0 1em 0 0;
 			float: left;
@@ -121,10 +199,39 @@ a:focus { color: #2795b6; }
 		}
 	}
 }
-
+.author-avatar {
+	float: left;
+	margin: 0 1em 0 0;
+}
 .testimonials-wrapper {
 	background-color: #e7e7e7;
 	padding: 2em 0 1em 0;
+	ul {
+		//border: 1px solid red;
+		li {
+			border-bottom: 1px solid black(.125);
+			padding: 15px 0 15px 0;
+			&:last-child {
+				border: none;
+			}
+			.pic {
+				float: left;
+				width: 13.5%;
+			}
+			blockquote {
+				float: right;
+				width: 85%;
+				.author {
+					font-family: $futura;
+					font-weight: bold;
+					span {
+						font-weight: normal;
+						font-style: italic;
+					}
+				}
+			}
+		}
+	}
 }
 
 
