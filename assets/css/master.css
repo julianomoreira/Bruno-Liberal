@@ -1979,6 +1979,10 @@ input:-ms-input-placeholder {
   margin: 0 auto;
   float: none; }
 
+.panel {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 1em; }
+
 /*- ==========================================================================
    styles
    ========================================================================== */
@@ -2161,7 +2165,7 @@ a:focus {
 
 /* Footer */
 .footer {
-  background-color: #58344d; }
+  background-color: #632e22; }
   @media screen and (max-width: 48em) {
     .footer {
       padding: 27px .25em 10px .25em; } }
