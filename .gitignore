@@ -1,0 +1,15 @@
+.htaccess
+htaccess.txt
+
+images/avatars/uploads
+images/captchas
+images/member_photos
+images/pm_attachments
+images/signature_attachments
+images/uploads
+brain/expressionengine/config/config.php
+brain/expressionengine/config/database.php
+brain/expressionengine/config/config_dev.php
+brain/expressionengine/config/config_prod.php
+brain/expressionengine/config/database_prod.php
+brain/expressionengine/cache
