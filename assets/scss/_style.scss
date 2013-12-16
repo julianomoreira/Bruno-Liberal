@@ -240,6 +240,7 @@ a:focus { color: #2795b6; }
 
 .footer {	
 	background-color: #632e22;
+	
 	@media screen and (max-width: $break-medium) {
 		padding: 27px .25em 10px .25em;
 	}	
