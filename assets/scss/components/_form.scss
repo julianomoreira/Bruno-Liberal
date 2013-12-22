@@ -2,11 +2,12 @@
   Form Elements
   ========================================================================== */
   
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea {
 	width: 100%; 
 	line-height: 20px; 
 	height: 50px;
 	padding: .5em; 
+	margin: 0;
 	background-color: rgba(255,255,255,1); 
 	border: 1px solid rgba(0,0,0,.25); 
 	font-family: Helvetica; 
@@ -16,7 +17,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
 	-moz-border-radius: 0px; 
 	-webkit-border-radius: 0px; 
 	border-radius: 0px;
-	@include roundcorners(4px);		
+	@include roundcorners(4px);			
 }
 textarea {
 	line-height: normal; 
@@ -39,23 +40,35 @@ input[type="submit"] {
 	
 }
 
+input[type="text"], input[type="password"], , input[type="email"], input[type="tel"], textarea, select { 
+	outline: none;
+	-webkit-appearance: none;
+}
+
+/* Focus */
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, input[type="password"]:focus, {
+	border: 2px solid #2fa97e;
+}
+
 input[placeholder] {
-	color: rgba(0,0,0,.5);
+	color: #666;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-	color: rgba(0,0,0,.25);
+	color: #666;
 }
 input::-webkit-input-placeholder {
-	color: black(.75);	
+	color: #666;
 }
 input::-moz-placeholder {
-	color: black(.75);
+	color: #666;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
-	color: black(.75);
+	color: #666;
 }
 input:-ms-input-placeholder { 
-	color: black(.75);
+	color: #666;
 }
+
 
 

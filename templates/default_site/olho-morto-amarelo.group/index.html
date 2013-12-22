@@ -58,22 +58,33 @@
     <div class="header container">
       
       <div class="two-cl col">
-        <img src="/assets/images/book-cover.png" class="book-cover">
+        <img src="/assets/images/cover.png" class="book-cover" alt="Olho Morto Amarelo">
       </div>
 
       <div class="two-cl col">
           <h1 class="">Reserve sua cópia!</h1>
           <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id vestibulum dolor, non aliquet augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p> 
+          
+          <form action="http://brunoliberal.us3.list-manage.com/subscribe/post" method="POST">
+          <input type="hidden" name="u" value="ebe7998054ea1a5dedadade55">
+          <input type="hidden" name="id" value="d4ff43fbd2">
           <ul>
               <li>
-                <input type="text" name="username" value="" dir="ltr" id="username" maxlength="70" placeholder="Digite o seu e-mail aqui" />
+                {!-- <label for="MERGE1">Nome</label> --}
+                <input type="text" name="MERGE1" id="MERGE1" size="25" value="" placeholder="Nome">
               </li>
-              <li>
-                <input type="submit" name="submit" value="Reserve seu livro agora" class="submit reserve-livro" />
+              <li>                
+                {!-- <label for="MERGE0">Email</label> --}
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="Digite o seu e-mail">                 
               </li>
-           </ul>           
-      </div>
-      
+              <li>                                 
+                 <input type="submit" class="button reserve-livro" name="submit" value="Reserve seu livro agora">
+              </li>
+              
+              </ul>
+          </form>
+      </div>      
+
     </div>        
 </div>
 
@@ -227,15 +238,24 @@
   <div class="three-cl-centered panel">    
     
     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id vestibulum dolor, non aliquet augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p> 
-    <ul>
-        <li>
-          <input type="text" name="username" value="" dir="ltr" id="username" maxlength="70" placeholder="Digite o seu e-mail aqui" />
-        </li>
-        <li>
-          <input type="submit" name="submit" value="Reserve seu livro agora" class="submit reserve-livro" />
-        </li>
-     </ul> 
-
+      <form action="http://brunoliberal.us3.list-manage.com/subscribe/post" method="POST">
+          <input type="hidden" name="u" value="ebe7998054ea1a5dedadade55">
+          <input type="hidden" name="id" value="d4ff43fbd2">
+          <ul>
+              <li>
+                {!-- <label for="MERGE1">Nome</label> --}
+                <input type="text" name="MERGE1" id="MERGE1" size="25" value="" placeholder="Nome">
+              </li>
+              <li>                
+                {!-- <label for="MERGE0">Email</label> --}
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="Digite o seu e-mail">                 
+              </li>
+              <li>                                 
+                 <input type="submit" class="button reserve-livro" name="submit" value="Reserve seu livro agora">
+              </li>
+              
+              </ul>
+        </form>
   </div>
 
 </div> <!-- end row -->

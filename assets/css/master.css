@@ -1734,11 +1734,12 @@ html[xmlns] .slides {
 /*- ==========================================================================
   Form Elements
   ========================================================================== */
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea {
   width: 100%;
   line-height: 20px;
   height: 50px;
   padding: .5em;
+  margin: 0;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.25);
   font-family: Helvetica;
@@ -1770,24 +1771,32 @@ input[type="submit"] {
   border-radius: 5px;
   -webkit-appearance: none; }
 
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], textarea, select {
+  outline: none;
+  -webkit-appearance: none; }
+
+/* Focus */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, input[type="password"]:focus {
+  border: 2px solid #2fa97e; }
+
 input[placeholder] {
-  color: rgba(0, 0, 0, 0.5); }
+  color: #666; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.25); }
+  color: #666; }
 
 input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.75); }
+  color: #666; }
 
 input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.75); }
+  color: #666; }
 
 input:-moz-placeholder {
   /* Older versions of Firefox */
-  color: rgba(0, 0, 0, 0.75); }
+  color: #666; }
 
 input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.75); }
+  color: #666; }
 
 /*- ==========================================================================
   Button 
@@ -1822,7 +1831,11 @@ input:-ms-input-placeholder {
   background: linear-gradient(to bottom, #3cb389 0%, #169769 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3cb389', endColorstr='#169769',GradientType=0 );
-  /* IE6-8 */ }
+  /* IE6-8 */
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 1px 0;
+  font-size: 20px; }
 
 .download-capitulo {
   background: #e36a4e;
@@ -2054,6 +2067,17 @@ a:focus {
   background-color: #222222;
   padding: 0 1em; }
 
+input[type="text"], input[type="email"] {
+  margin: .25em 0;
+  border: 1px solid #999; }
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 1px 0;
+  font-size: 20px;
+  margin-top: .25em; }
+
 .container {
   max-width: 999px;
   margin: 0 auto;
@@ -2072,7 +2096,7 @@ a:focus {
   font-size: 18px; }
 
 .header-wrapper {
-  background: url(../images/header-bg.jpg) no-repeat;
+  background: url(../images/header-bg-1.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2099,7 +2123,7 @@ a:focus {
   text-shadow: rgba(0, 0, 0, 0.25) 0 1px 0; }
 .header .book-cover {
   position: relative;
-  top: 60px;
+  top: 30px;
   left: 30px; }
   @media screen and (max-width: 48em) {
     .header .book-cover {
@@ -2112,33 +2136,6 @@ a:focus {
   @media screen and (max-width: 37.5em) {
     .header .book-cover {
       width: 80%; } }
-.header input[type="text"] {
-  color: #999999 !important; }
-.header ::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #999;
-  text-align: center;
-  font-size: 18px; }
-.header :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #999;
-  text-align: center;
-  font-size: 18px; }
-.header ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #999;
-  text-align: center;
-  font-size: 18px; }
-.header :-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #999;
-  text-align: center;
-  font-size: 18px; }
-.header input[type="submit"] {
-  text-transform: uppercase;
-  font-family: "futura-pt", sans-serif;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 1px 0;
-  font-size: 20px; }
 
 .sn-wrapper {
   background-color: #632e22;

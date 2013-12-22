@@ -67,6 +67,18 @@ a:focus { color: #2795b6; }
 	padding: 0 1em;
 }
 
+input[type="text"], input[type="email"] {
+	margin: .25em 0;
+	border: 1px solid #999;
+}
+input[type="submit"] {
+	text-transform: uppercase;
+	font-family: $futura;
+	@include black-textshadow(.25);
+	font-size: 20px;
+	margin-top: .25em;
+}
+
 // Container 
 
 .container {
@@ -92,7 +104,7 @@ a:focus { color: #2795b6; }
 	font-size: 18px;
 }
 .header-wrapper {	
-	background: url(../images/header-bg.jpg) no-repeat;
+	background: url(../images/header-bg-1.jpg) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -122,7 +134,7 @@ a:focus { color: #2795b6; }
 	}
 	.book-cover {
 		position: relative;
-		top: 60px;
+		top: 30px;
 		left: 30px;
 		@media screen and (max-width: $break-medium) {
 			left: auto;
@@ -135,36 +147,6 @@ a:focus { color: #2795b6; }
 		@media screen and (max-width: $break-small) {
 			width: 80%;
 		}
-	}
-	input[type="text"] {
-		color: #999!important;
-	}
-	::-webkit-input-placeholder { /* WebKit browsers */
-    	color: #999;
-		text-align: center;
-		font-size: 18px;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	    color: #999;
-		text-align: center;
-		font-size: 18px;	    
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	    color: #999;
-		text-align: center;
-		font-size: 18px;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-	    color: #999;
-		text-align: center;
-		font-size: 18px;
-	}
-
-	input[type="submit"] {
-		text-transform: uppercase;
-		font-family: $futura;
-		@include black-textshadow(.25);
-		font-size: 20px;
 	}
 }
 .sn-wrapper {
