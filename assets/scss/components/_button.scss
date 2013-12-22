@@ -25,3 +25,9 @@
 	background: linear-gradient(to bottom,  #3cb389 0%,#169769 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb389', endColorstr='#169769',GradientType=0 ); /* IE6-8 */
 }
+.download-capitulo {
+	background: #e36a4e;
+	text-transform: uppercase;
+	@include black-textshadow(.25);
+	border: none!important;
+}

@@ -103,12 +103,7 @@ a:focus { color: #2795b6; }
 		height: auto;			
 	}
 }
-.header {
-	.two-cl {
-		@media screen and (max-width: $break-medium) {
-			width: 100%;			
-		}
-	}	
+.header {	
 	h1 {
 		font-family: $minion-pro;
 		font-size: 58px;
@@ -197,6 +192,23 @@ a:focus { color: #2795b6; }
 				color: #fff;
 			}
 		}
+	}
+}
+.texto {	
+	padding-bottom: 2em;
+}
+.download-conto {
+	background-color: #eaeaea;
+	padding-top: 1em!important;
+	border: 1px solid #d8d8d8;
+	h3 {
+		margin-top: 0;
+		color: #634740;
+		text-transform: uppercase;
+		font-weight: normal;		
+	}
+	h3 + p {
+		margin-bottom: 0;
 	}
 }
 .author-avatar {
