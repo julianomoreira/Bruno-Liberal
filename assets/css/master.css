@@ -1937,7 +1937,6 @@ input:-ms-input-placeholder {
   padding: 0 1em; }
 
 .col > h4 {
-  color: #fff;
   font-size: 14px; }
 
 .col > h5 {
@@ -2154,10 +2153,12 @@ input[type="submit"] {
     .sn ul {
       float: none; } }
   .sn ul li {
-    margin: 0 1em 0 0;
+    margin: 0 0 0;
     float: left; }
     .sn ul li a {
       color: #fff; }
+  .sn ul .facebook {
+    float: right; }
 
 .texto {
   padding-bottom: 2em; }
@@ -2166,6 +2167,21 @@ input[type="submit"] {
   background-color: #eaeaea;
   padding-top: 1em !important;
   border: 1px solid #d8d8d8; }
+  .download-conto .download-capitulo a {
+    padding: 9px 10px;
+    margin: 1em 0;
+    font-size: 1em;
+    width: 100%;
+    color: white !important;
+    line-height: 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: rgba(255, 255, 255, 0.15) 0 1px 0; }
   .download-conto h3 {
     margin-top: 0;
     color: #634740;
